@@ -12,9 +12,9 @@
 
                 //change text when when button is clicked
 
-                $(this).hasClass("start-fun")
-                    ? $(this).text("stop the fun")
-                    : $(this).text("start the fun")
+                // $(this).hasClass("start-fun")
+                //     ? $(this).text("stop the fun")
+                //     : $(this).text("start the fun")
             })
         </script>
     </head>
@@ -22,7 +22,7 @@
         <div class="page">
             <div class="today">오늘 뭐 먹지 ?</div>
             <br /><br />
-            <button class="fun-btn">정해줄게!</button>
+            <button class="fun-btn"><a href="{% url 'random_food' %}">정해줄게!</a></button>
         </div>
     </body>
 </html>
