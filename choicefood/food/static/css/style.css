@@ -11,12 +11,6 @@ body {
     color: white;
 }
 .page {
-    /* width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    overflow: hidden; */
-    /* border: 1px solid black; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,33 +22,13 @@ body {
 
 /* add default color for animation start  */
 
-/* toggle this class */
-
-.color-bg-start {
-    background-color: salmon;
-}
-
-/* toggle class bg-animate-color */
-
 .bg-animate-color {
     animation: random-bg 0.5s linear infinite;
-}
-
-/* add animation to bg color  */
-
-@keyframes random-bg {
-    from {
-        filter: hue-rotate(0);
-    }
-    to {
-        filter: hue-rotate(360deg);
-    }
 }
 
 .fun-btn {
     /* change bg color to get different hues    */
     background-color: white;
-    color: #29c0bb;
     padding: 20px 30px;
     border: none;
     transition: all 0.3s ease;
@@ -76,12 +50,6 @@ body {
 
 .fun-btn:hover {
     animation: random-bg 0.5s linear infinite, grow 1300ms ease infinite;
-}
-
-.start-fun {
-    background-color: #fff !important;
-    /* change color of button text when fun is started   */
-    color: salmon !important;
 }
 
 /* pulsating effect on button */
@@ -109,4 +77,13 @@ body {
         format("woff");
     font-weight: normal;
     font-style: normal;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
 }
